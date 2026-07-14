@@ -1,0 +1,356 @@
+Copy
+
+You are a senior enterprise UX/UI architect and design systems engineer. Design a complete, production-ready Figma file for NEXUS AI — an enterprise-grade AI platform built on the Myalosis core engine, co-branded in strategic alliance with Cisco Systems. Every screen, component, and token must meet Fortune 500 enterprise standards.
+
+═══════════════════════════════════════════
+BRAND & DESIGN SYSTEM FOUNDATION
+═══════════════════════════════════════════
+
+NAME: Nexus AI  |  TAGLINE: "Intelligence at the Core of Your Enterprise"
+ALLIANCE: Cisco Systems co-branding (secondary brand mark, Cisco Blue accent layer)
+ENGINE: Myalosis Core — shown as a subtle "Powered by Myalosis" chip in nav and footers
+
+COLOR SYSTEM (create as Figma variables):
+  Primary:     Nexus Blue   #0D47A1 → #1565C0 → #1976D2 → #42A5F5
+  Alliance:    Cisco Blue   #005073 → #049FD9
+  Accent:      Neural Teal  #00695C → #00897B → #26A69A
+  Surface:     Slate        #0A0E1A (dark) / #F8FAFC (light)
+  Error/Alert: #B71C1C / #FF5252
+  Success:     #1B5E20 / #66BB6A
+  Warning:     #E65100 / #FFB300
+  Text/100:    #ECEFF1 | Text/200: #B0BEC5 | Text/900: #0D1117
+
+TYPOGRAPHY SYSTEM:
+  Display:     Inter 700 — 56/48/40px (hero headlines)
+  Heading:     Inter 600 — 32/28/24/20px
+  Body:        Inter 400 — 16/14px, line-height 1.65
+  Code/Mono:   JetBrains Mono 400/500 — 14/13px
+  Label/Caps:  Inter 500, 11px, letter-spacing 0.08em, uppercase
+
+SPACING: 4px base unit — scale: 4/8/12/16/24/32/48/64/96px
+RADIUS: xs=2 sm=4 md=8 lg=12 xl=16 2xl=24 full=9999
+SHADOWS: 
+  sm: 0 1px 3px rgba(0,0,0,0.25)
+  md: 0 4px 12px rgba(0,0,0,0.30)
+  lg: 0 8px 32px rgba(0,0,0,0.35)
+  glow-blue: 0 0 24px rgba(13,71,161,0.4)
+
+═══════════════════════════════════════════
+PAGE 1 — LANDING PAGE (Marketing)
+═══════════════════════════════════════════
+
+SECTION 1 — GLOBAL NAV (sticky, glassmorphism on dark bg):
+  Left: Nexus AI wordmark + logomark (geometric hexagonal node icon)
+  Center: Products | Solutions | Enterprise | Integrations | Pricing | Docs
+  Right: [Cisco Alliance Badge chip] [Sign in] [Request Demo →] (CTA button, Nexus Blue filled)
+  Sub-bar: "Powered by Myalosis Core Engine" pill in Neural Teal, 11px, centered
+
+SECTION 2 — HERO (full-width, dark Slate surface #0A0E1A):
+  H1 (56px, Inter 700, white): "Enterprise Intelligence.\nRevived. Unified. Nexus."
+  Subhead (20px, #B0BEC5): "Nexus AI fuses the Myalosis intelligence core with Cisco's enterprise network fabric — delivering real-time AI across every layer of your organization."
+  CTA Row: [Get Started Free →] [Watch 2-min Demo ▶] [Talk to Sales]
+  Trust bar below CTA: "SOC 2 Type II · ISO 27001 · FedRAMP Ready · HIPAA · GDPR"
+  Right visual: 3D-style isometric network node diagram — hexagonal AI nodes connected by glowing Neural Teal lines, Cisco router icons at edge nodes, Myalosis core at center pulsing blue
+  Bottom: Logos strip "Trusted by" — include 8 enterprise logo placeholders (Fortune 500 tier)
+
+SECTION 3 — CISCO ALLIANCE BANNER (full-width, Cisco Blue #005073):
+  Left: Cisco logo + "Strategic Alliance Partner"
+  Center: Short value prop — "Native integration with Cisco Meraki, Webex, SecureX, and Catalyst"
+  Right: [Explore Cisco Integrations →]
+
+SECTION 4 — PRODUCT PILLARS (3-column cards on light surface):
+  Card 1 — Nexus Cortex (AI Reasoning Engine): icon: brain-circuit, Nexus Blue
+  Card 2 — Nexus Fabric (Network Intelligence): icon: circuit-board, Cisco Blue  
+  Card 3 — Nexus Sentinel (Security AI): icon: shield-check, Neural Teal
+  Each card: icon + title + 2-line description + metric chip ("99.97% uptime") + [Learn more →]
+
+SECTION 5 — FEATURE GRID (alternating left/right image+text blocks, 3 rows):
+  Row 1: Real-time Inference Engine — animated data flow visual
+  Row 2: Cisco Fabric Integration — network topology screenshot mockup
+  Row 3: Myalosis Core Dashboard — dark UI preview with Neural Teal accents
+
+SECTION 6 — METRICS / SOCIAL PROOF (dark bg, 4-column stat grid):
+  Stat 1: 10M+ API calls/day  |  Stat 2: <12ms average latency
+  Stat 3: 340+ Enterprise customers  |  Stat 4: 99.99% SLA guaranteed
+
+SECTION 7 — PRICING (3 tiers on light surface):
+  Tier 1 — Professional: $49/seat/mo — for teams
+  Tier 2 — Enterprise (FEATURED, Nexus Blue border): Custom pricing — full Cisco integration
+  Tier 3 — Government/FedRAMP: Custom — air-gapped + compliance pack
+  Each: feature checklist, CTA button, badge for compliance marks
+
+SECTION 8 — TESTIMONIALS (carousel-style 3-up cards):
+  Enterprise customer quotes — CISO, CTO, CDO personas — company name, headshot placeholder, quote, star rating
+
+SECTION 9 — CTA SECTION (full-width dark gradient):
+  Headline: "Ready to Activate Nexus AI Across Your Enterprise?"
+  Sub: "Average deployment: 4 days. Average ROI: 6.2x in year one."
+  CTA: [Schedule Enterprise Demo →] [Download Datasheet]
+
+SECTION 10 — FOOTER (4-column, dark bg):
+  Col 1: Nexus AI logo + Myalosis tagline + Cisco Alliance badge + social icons
+  Col 2: Products — Cortex / Fabric / Sentinel / API Docs
+  Col 3: Solutions — Financial Services / Healthcare / Government / Manufacturing
+  Col 4: Company — About / Careers / Partners / Security / Legal
+  Bottom bar: copyright + SOC2 badge + ISO badge + privacy/terms links
+
+═══════════════════════════════════════════
+PAGE 2 — DESIGN SYSTEM / COMPONENT LIBRARY
+═══════════════════════════════════════════
+
+COMPONENT GROUPS (each on its own Figma frame, auto-layout):
+
+FOUNDATIONS:
+  • Color swatches — all variables, light+dark mode
+  • Typography scale — all type styles with specimen text
+  • Spacing scale — visual ruler blocks
+  • Iconography — 24px grid, 60+ icons from Phosphor or Tabler
+  • Elevation/shadow levels — 5-tier stack
+
+ATOMS:
+  • Button — 5 variants (Primary, Secondary, Ghost, Danger, Link) × 3 sizes × states (default/hover/pressed/loading/disabled)
+  • Input field — text, password, search, textarea — all states + validation
+  • Checkbox, Radio, Toggle — default/checked/indeterminate/disabled
+  • Badge/Chip — status (success/warning/error/info) + removable + count
+  • Avatar — size XS→XL, image/initials/icon variants, with presence dot
+  • Tooltip — top/bottom/left/right, max-width 240px
+  • Tag/Label — 6 semantic colors + outline variant
+  • Divider — horizontal/vertical, labeled
+
+MOLECULES:
+  • Dropdown/Select — single + multi-select + searchable
+  • Date picker — single + range
+  • File uploader — drag-drop zone + file list
+  • Search bar — with filters panel, autocomplete dropdown
+  • Notification toast — 4 types, auto-dismiss + persistent
+  • Modal dialog — sm/md/lg, confirmation + form variants
+  • Popover — with arrow, various placements
+  • Stepper — horizontal + vertical, 3-5 steps, with error state
+  • Breadcrumb — with overflow collapse
+  • Pagination — numbered + prev/next + page size selector
+
+ORGANISMS:
+  • Data table — sortable columns, row selection, bulk actions, inline edit, column resize, row expand, empty state, loading skeleton
+  • Navigation sidebar — collapsed/expanded, sections + items + badges + nested items
+  • Top navbar — with breadcrumb, search, notifications, user menu
+  • Card — metric card / feature card / AI insight card / entity card
+  • Form — contact, login, MFA, onboarding wizard (5-step)
+  • Command palette (⌘K) — search + recent actions + keyboard shortcuts
+  • Activity feed — timeline style, event types with icons
+  • KPI banner — top-of-page strip, 4 metrics with delta indicators
+
+AI-SPECIFIC COMPONENTS:
+  • Chat interface — user/AI message bubbles, typing indicator, code blocks, citations
+  • AI status chip — thinking / generating / complete / error states
+  • Confidence meter — horizontal bar with % + color coding
+  • Insight card — AI-generated finding with action buttons
+  • Prompt composer — multi-line input, file attach, model selector, token counter
+  • Model selector dropdown — GPT-4 / Claude / Nexus-7B options with latency chip
+  • Anomaly alert — severity badge + sparkline + details expansion
+  • Prediction timeline — horizontal scrollable forecast track
+
+═══════════════════════════════════════════
+PAGE 3 — AUTHENTICATION FLOWS
+═══════════════════════════════════════════
+
+Screens (all full-page, dark Slate background with centered card):
+  1. Sign In — email + password + SSO buttons (Cisco SecureX, Microsoft, Okta, Google)
+  2. MFA Challenge — 6-digit OTP input + authenticator app instructions
+  3. SSO Redirect — loading state + Cisco branding
+  4. Forgot Password — email entry + confirmation screen
+  5. First Login — password setup + security questions
+  6. Onboarding Wizard — 5 steps: Profile → Organization → Team → Integrations → Launch
+
+═══════════════════════════════════════════
+PAGE 4 — MAIN DASHBOARD (Command Center)
+═══════════════════════════════════════════
+
+LAYOUT: 
+  Left: 240px sidebar (collapsed: 64px) — logo, nav items, workspace switcher
+  Top: 64px navbar — breadcrumb, ⌘K search, notification bell (badge), user avatar
+  Body: 3-zone grid layout
+
+ZONES:
+  Zone A — KPI Strip (top, full-width, 4 metric cards):
+    • Total API Requests (today): 2.4M ↑12%
+    • Active AI Agents: 147 ↑3
+    • Network Events Processed: 890K ↑8%
+    • Anomalies Detected: 12 ↓40% (green = good)
+
+  Zone B — Main Content Area (left 65%):
+    • Real-time Inference Chart — area chart, Nexus Blue + Teal, last 24h
+    • Active Agent Table — columns: Agent Name | Model | Status | Requests | Latency | Action
+    • Cisco Network Events Feed — scrollable, event type icons, severity badges
+
+  Zone C — Right Sidebar (35%):
+    • AI Insight Card — top priority finding with confidence score
+    • Quick Actions panel — 4 actions: Deploy Agent / View Logs / Run Query / Escalate
+    • Cisco Integration Status — 6 product tiles: Meraki ✓ / Webex ✓ / SecureX ✓ / Catalyst ✓ / Duo ✗ / ThousandEyes ↻
+    • Recent Activity feed — 8 items with timestamps
+
+═══════════════════════════════════════════
+PAGE 5 — AI AGENTS DASHBOARD
+═══════════════════════════════════════════
+
+HEADER: "AI Agents" + [+ Deploy New Agent] button + filter bar
+TABS: All Agents | Active | Scheduled | Archived | My Agents
+
+AGENT CARD GRID (3-column):
+  Each card contains:
+  • Agent avatar (colored hexagon with model initial)
+  • Agent name + type badge (Inference / Automation / Monitoring / NLP)
+  • Status pill (Active/Idle/Error/Deploying)
+  • Metrics row: Requests today | Avg latency | Success rate
+  • Mini sparkline (7-day activity)
+  • Model chip (Nexus-7B / Claude / GPT-4)
+  • Action bar: [Configure] [View Logs] [Pause] [•••]
+
+DETAIL PANEL (right drawer, 480px):
+  • Agent profile header
+  • Performance chart (7-day)
+  • Configuration JSON editor (read-only with copy)
+  • Integration list — which Cisco services this agent monitors
+  • Recent executions table
+  • [Edit Configuration] [View Full Logs] [Clone Agent] [Delete]
+
+═══════════════════════════════════════════
+PAGE 6 — ANALYTICS & INTELLIGENCE DASHBOARD
+═══════════════════════════════════════════
+
+LAYOUT: Full-width, multi-chart grid
+DATE SELECTOR: [Last 7d] [30d] [90d] [Custom range] + [Export CSV] [Share]
+
+CHARTS (label each chart type):
+  R1C1 — API Usage Over Time: Area chart, dual-line (requests vs. errors), Nexus Blue + Red
+  R1C2 — Latency Distribution: Box plot or violin chart, by model
+  R1C3 — Agent Deployment Map: World map, bubble size = request volume, Cisco locations marked
+  R2C1 — Model Performance Comparison: Grouped bar chart, 4 models × 3 KPIs
+  R2C2 — Cost Attribution: Pie / donut, by team/department
+  R2C3 — Anomaly Timeline: Scatter on timeline, severity color-coded
+  R3 (full-width) — Cisco Network × AI Event Correlation: Dual-axis chart, network events (left) vs AI inference calls (right), highlighting correlated spikes
+
+═══════════════════════════════════════════
+PAGE 7 — CISCO INTEGRATION HUB
+═══════════════════════════════════════════
+
+HEADER: Cisco logo + "Nexus AI × Cisco Integration Hub" + Alliance Badge
+INTEGRATION CARDS GRID (3-col):
+  • Meraki — Network Intelligence
+  • Webex — AI-powered Meetings & Messaging
+  • SecureX — Threat Detection AI
+  • Catalyst Center — Network Automation
+  • Duo Security — Identity AI
+  • ThousandEyes — Network Observability
+  • Umbrella — DNS Security AI
+  • AppDynamics — Application Intelligence
+
+Each card: Product logo + name + status toggle + [Configure] + event count chip + last sync timestamp
+
+INTEGRATION DETAIL PAGE:
+  • Full config panel — API key, webhooks, event filters
+  • Data flow diagram (visual) — Cisco product → Nexus AI → Output
+  • Event log table — recent events from this integration
+  • [Test Connection] [Resync] [View Docs →]
+
+═══════════════════════════════════════════
+PAGE 8 — SECURITY & COMPLIANCE CENTER
+═══════════════════════════════════════════
+
+COMPLIANCE SCORECARD (top, full-width card):
+  Progress rings for: SOC 2 (98%) | ISO 27001 (100%) | FedRAMP (In Progress 72%) | HIPAA (95%) | GDPR (100%)
+
+SECTIONS:
+  • Access Control — role matrix table (roles vs. permissions grid)
+  • Audit Log — filterable table, export, 90-day retention
+  • Data Residency Map — world map with region zones, data center pins
+  • API Key Management — key list with last-used, scopes, rotate/revoke actions
+  • Security Alerts — severity-ranked list with AI-generated remediation suggestions
+  • Vulnerability Panel — CVE tracking, patch status, Nexus AI auto-remediation toggle
+
+═══════════════════════════════════════════
+PAGE 9 — SETTINGS & ADMINISTRATION
+═══════════════════════════════════════════
+
+SETTINGS NAV (left sidebar within page):
+  General | Team & Users | Billing & Usage | API Keys | Integrations | Notifications | Security | Advanced
+
+KEY SCREENS:
+  • Team Management — member table, role dropdown, invite flow, SSO mapping
+  • Billing — plan card, usage meter bars, invoice history table, upgrade CTA
+  • Notification Center — per-event toggles, channel selectors (email/Slack/Webex/PagerDuty)
+  • API Keys — scoped key creation flow, key list with copy + revoke
+  • White-label — logo upload, custom domain, color overrides (for enterprise customers)
+
+═══════════════════════════════════════════
+PAGE 10 — MYALOSIS CORE ENGINE CONSOLE
+═══════════════════════════════════════════
+
+HEADER: "Myalosis Core" chip (Neural Teal) — advanced/internal view
+
+PANELS:
+  • Model Registry — table of deployed models, version, size, accuracy, serving status
+  • Inference Pipeline Builder — visual drag-drop node canvas (pre/post processors, model node, routing rules)
+  • Fine-tuning Studio — dataset upload, training config, job queue, loss chart
+  • Prompt Template Library — searchable grid of saved prompts with tags
+  • Context Window Monitor — live token usage bar per running session
+  • Embedding Index — vector namespace list, document counts, search test panel
+
+═══════════════════════════════════════════
+PAGE 11 — MOBILE APP SCREENS (iOS & Android)
+═══════════════════════════════════════════
+
+DEVICE FRAMES: iPhone 16 Pro + Samsung Galaxy S25 (use Figma device frames)
+
+SCREENS (portrait, 390×844 base):
+  1. Mobile Login — biometric + SSO
+  2. Home Dashboard — 3 KPI cards, quick actions, activity feed
+  3. AI Chat — full-screen conversational interface
+  4. Agent Monitor — card list with status chips, pull-to-refresh
+  5. Notification Center — grouped by severity
+  6. Settings — profile, security, integrations
+  7. Cisco Alert Detail — full alert view with remediation CTA
+
+═══════════════════════════════════════════
+PAGE 12 — EMPTY STATES, ERROR STATES, LOADING
+═══════════════════════════════════════════
+
+FOR EVERY MAJOR SCREEN INCLUDE:
+  • Empty state — illustration (geometric/minimal), heading, subtext, primary CTA
+  • Loading skeleton — gray animated placeholder matching exact layout
+  • Error state — type (404 / 500 / Auth / Network) + icon + message + [Retry] / [Go Home]
+  • Partial data state — "Connecting to Cisco Meraki…" with spinner and cancel
+
+═══════════════════════════════════════════
+FIGMA FILE STRUCTURE (pages)
+═══════════════════════════════════════════
+
+Page 1:  🎨 Design System & Tokens
+Page 2:  🧩 Component Library
+Page 3:  🌐 Landing Page — Desktop
+Page 4:  📱 Landing Page — Mobile
+Page 5:  🔐 Auth Flows
+Page 6:  🖥️ Main Dashboard
+Page 7:  🤖 AI Agents Dashboard
+Page 8:  📊 Analytics & Intelligence
+Page 9:  🔌 Cisco Integration Hub
+Page 10: 🛡️ Security & Compliance
+Page 11: ⚙️ Settings & Admin
+Page 12: ⚛️  Myalosis Core Console
+Page 13: 📱 Mobile Screens
+Page 14: 💀 Empty / Error / Loading States
+Page 15: 🚀 Prototype Flow Map
+
+═══════════════════════════════════════════
+QUALITY & PRODUCTION REQUIREMENTS
+═══════════════════════════════════════════
+
+• All components built with Figma Auto Layout (v4), constraints set for all screen widths
+• All colors must use Figma Variables (not hardcoded), with light/dark mode modes
+• All text must use Figma Text Styles
+• All components must have documented property variants using Figma Component Properties
+• Prototype: wire all navigation flows, hover states, modal opens, sidebar expand/collapse
+• All interactive states: Default / Hover / Pressed / Focus / Disabled / Loading / Error
+• Accessibility: minimum AA contrast on all text, focus rings on all interactive elements
+• Export-ready: all icons as SVG components, all assets named with BEM convention
+• Grid: 12-column, 24px gutters, 80px margins (desktop); 4-column (tablet); 2-column (mobile)
+• All dashboards must include both Light Mode and Dark Mode frames side by side
